@@ -1,0 +1,13 @@
+<%= form_tag "/desserts/#{@dessert.id}", method: :patch do %>
+  <div>
+    <label for="">Name:</label>
+    <input type="text" name="name" value="<%= @dessert.name %>">
+  </div>
+  <div>
+    <label for="">Portions:</label>
+    <input type="text" name="portions" value="<%= @dessert.portions %>">
+  </div>
+  <div>
+    <input type="submit" value="Submit">
+  </div>
+<% end %>

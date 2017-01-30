@@ -1,0 +1,14 @@
+<%= form_tag "/desserts", method: :post do %>
+  <div>
+    <label for="">Name:</label>
+    <input type="text", name="name">
+  </div>
+  <div>
+    <label for="">Portions:</label>
+    <input type="text", name="portions">
+  </div>
+  <div>
+    <input type="submit", value="Submit">
+  </div>
+<% end %>
+
